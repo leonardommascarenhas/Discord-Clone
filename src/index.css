@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 @layer components {
 
   .sidebar-icon {
     @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-gray-50 rounded-3xl hover:rounded-xl transition-all cursor-pointer caret-transparent }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left caret-transparent
+    @apply absolute z-10 w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left caret-transparent 
+  }
+  .message-icons {
+    @apply flex items-center justify-center h-6 w-5 text-gray-500 mt-2 mb-2
   }
 }
