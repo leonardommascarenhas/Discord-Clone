@@ -5,13 +5,15 @@ import { AiOutlineMail } from "react-icons/ai";
 const Messages = () => {
   return (
     <div className="relative h-screen p-2 flex flex-col bg-gray-800 shadow-lg w-60">
-      <div className="direct-messages-menu">
+      <div className="mb-4">
         <MessagesMenu icon={<FaUserFriends className="message-icons" />} text={"Amigos"} />
         <MessagesMenu icon={<BsSpeedometer className="message-icons" />} text={"Nitro"} />
         <MessagesMenu icon={<AiOutlineMail className="message-icons" />} text={"Solicitações de me..."} />
       </div>
+      <h6 className="text-xs font-semibold ml-2.5 text-gray-400">MENSAGENS DIRETAS</h6>
       <div className="direct-messages">
-        <MessagesReceived profilePics={<BsFillLightningFill size={20} />} text={"Nyels"}></MessagesReceived>
+        <MessagesReceived profilePics={<BsFillLightningFill size={19} />} text={"Nyels"}></MessagesReceived>
+        <MessagesReceived profilePics={<FaPoo size={19} />} text={"Pou Lourds"}></MessagesReceived>
       </div>
     </div>
   );
