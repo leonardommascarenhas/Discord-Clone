@@ -3,10 +3,7 @@ import { FaFire, FaPoo } from "react-icons/fa";
 
 const SideBar = () => {
   return (
-    <div
-      className="relative h-screen w-16 flex flex-col
-                  bg-white dark:bg-gray-900 shadow-lg"
-    >
+    <div className="relative h-screen w-20 flex flex-col bg-white dark:bg-gray-900 shadow-lg">
       <SideBarIcon icon={<FaFire size="28" />} text={"Direct Messages"} />
       <SideBarIcon icon={<BsFillLightningFill size="20" />} text={"Nyels"} />
       <SideBarIcon icon={<FaPoo size="20" />} text={"Pou Lords"} />

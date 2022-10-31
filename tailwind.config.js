@@ -16,6 +16,9 @@ module.exports = {
           100: "#f2f3f5",
         },
       },
+      fontFamily: {
+        body: ["Roboto"],
+      },
     },
   },
   plugins: [],

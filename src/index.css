@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +18,15 @@
     @apply absolute z-10 w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left caret-transparent 
   }
   .message-icons {
-    @apply h-4 w-4 text-gray-400 
+    @apply text-gray-400 h-6 w-6 ml-1 align-bottom
+  }
+  .message-menu-container{
+    @apply flex items-center p-2 mt-1 w-48 h-9 hover:bg-gray-600 rounded-lg
+  }
+  .message-text{
+    @apply text-gray-400 font-medium text-sm
+  }
+  .profile-pics{
+    @apply relative flex items-center justify-center h-8 w-8 mr-0.5 bg-gray-300 text-green-500 rounded-3xl
   }
 }
