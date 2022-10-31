@@ -4,23 +4,21 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const Messages = () => {
   return (
-    <div className="h-screen w-48 bg-gray-800">
-      <MessagesMenu icon={<FaUserFriends size="28" />} text={"Amigos"} />
-      <MessagesMenu icon={<BsSpeedometer size="28" />} text={"Nitro"} />
-      <MessagesMenu
-        icon={<AiOutlineMail size="28" />}
-        text={"Solicitações de mensagem"}
-      />
+    <div
+      className="relative h-screen w-62 flex flex-col
+                   bg-gray-800 shadow-lg"
+    >
+      <MessagesMenu icon={<FaUserFriends />} text={"Amigos"} />
+      <MessagesMenu icon={<BsSpeedometer />} text={"Nitro"} />
+      <MessagesMenu icon={<AiOutlineMail />} text={"Solicitações de men..."} />
     </div>
   );
 };
 
 const MessagesMenu = ({ icon, text }) => (
-  <div className="flex">
-    <div className="message-icons">
-      {icon}
-      <span className="">{text}</span>
-    </div>
+  <div className="flex items-center p-2 m-2">
+    <div className="message-icons">{icon}</div>
+    <span className="ml-3">{text}</span>
   </div>
 );
 
