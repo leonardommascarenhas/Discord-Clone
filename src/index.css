@@ -27,6 +27,6 @@
     @apply text-gray-400 font-medium text-sm
   }
   .profile-pics{
-    @apply relative flex items-center justify-center h-8 w-8 bg-gray-600 text-green-500 rounded-3xl
+    @apply relative flex items-center justify-center h-8 w-8 bg-gray-700 text-green-500 rounded-3xl shadow-lg
   }
 }

@@ -24,9 +24,11 @@ const OnlinePerson = ({ profilePics, name, status }) => {
   }, []);
 
   return (
-    <div>
-      {profilePics}
-      {name}
+    <div className="onlineCard">
+      <div className="flex">
+        <span className="profile-pics">{profilePics}</span>
+        {name}
+      </div>
       {status}
     </div>
   );

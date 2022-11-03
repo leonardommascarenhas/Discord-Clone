@@ -1,7 +1,7 @@
 import SideBar from "./SideBar";
 import Messages from "./Messages";
 import ChatArea from "./ChatArea";
-import Online from "./Online";
+import ActiveNow from "./ActiveNow";
 import { AuthProvider } from "./Providers/auth";
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <SideBar />
         <Messages />
         <ChatArea />
+        <ActiveNow />
       </AuthProvider>
     </div>
   );
