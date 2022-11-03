@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BsLightbulbFill } from "react-icons/bs";
+import { BsLightningFill } from "react-icons/bs";
 import { FaPoo } from "react-icons/fa";
 import { AuthContext } from "./Providers/auth";
 
@@ -10,7 +10,7 @@ const Online = () => {
     <>
       <div>ONLINE - {count}</div>
       <div className="h-20 w-20">
-        <OnlinePerson profilePics={<BsLightbulbFill />} name={"Nyels"} status={"Ausente"} />
+        <OnlinePerson profilePics={<BsLightningFill />} name={"Nyels"} status={"Ausente"} />
         <OnlinePerson profilePics={<FaPoo />} name={"Pou Lords"} status={"Ausente"} />
       </div>
     </>
